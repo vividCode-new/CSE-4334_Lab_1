@@ -1,0 +1,15 @@
+1. Make sure git is install in the terminal: sudo apt install git
+2. Find the https link and copy: Will send via email
+3. Clone the repository down: git clone "git@github.com/username/example.git
+4. Change dir into the cloned down repo: cd cloned_down_repo
+5. Initialize repo again to be safe: git init
+6. Set up global user name: git config --global user.name "yourUsername"
+7. Set up global email address: git config --global user.email "myUser@ex.com"
+8. After any change with the folder, add all files and commit: git add . && git commit
+9. To check status of files: git status
+10. To check commits: git log
+11. Create a new branch to start other parts
+12. Git merge after or push the new branch - to be on the safe side just in case of an error
+13. Push the updates made to the repo with: git push
+
+There may be something I forgot to add here. Let me know if you have any issues. (Charles)
