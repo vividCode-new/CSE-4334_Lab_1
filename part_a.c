@@ -6,14 +6,14 @@
 #define MIN_VAL 1
 #define MAX_VAL 100000
 
-void swap (int *array, int i, int j)
+void swap (int *array, int i, int j) //swap function for bubble sort and quick sort
 {
     int temp = array[i];
     array[i] = array[j];
     array[j] = temp;
 }
 
-int partition(int *array, int low, int high)
+int partition(int *array, int low, int high) //for quick sort
 {
     int pivot = array[high]; 
     int i = (low - 1);
@@ -43,7 +43,7 @@ void generate_data(int *data_array, int count) {
 
 // --- Algorithm Implementations ---
 
-void unoptimized_algorithm(int *data, int count) {
+void unoptimized_algorithm(int *data, int count) { //bubble sort
     /**
     TODO: Implement your chosen 'slow' or unoptimized algorithm here.
     Example: Bubble Sort for an array of numbers.
@@ -63,7 +63,7 @@ void unoptimized_algorithm(int *data, int count) {
     }
 }
 
-void optimized_algorithm(int *data, int low, int high) {
+void optimized_algorithm(int *data, int low, int high) { //quick sort
     /**
     TODO: Implement your chosen 'fast' or optimized algorithm here.
     Example: Quick Sort or Merge Sort for an array of numbers.
@@ -109,8 +109,8 @@ int main() {
     
     clock_t end_total_unoptimized = clock();
 
-    double total_processing_unoptimized = (double)(end_processing_unoptimized - start_processing_unoptimized) / CLOCKS_PER_SEC;
-    double total_unoptimized = (double)(end_total_unoptimized - start_total_unoptimized) / CLOCKS_PER_SEC;
+    double total_processing_unoptimized = (double)(end_processing_unoptimized - start_processing_unoptimized) / CLOCKS_PER_SEC; //calculating processing time
+    double total_unoptimized = (double)(end_total_unoptimized - start_total_unoptimized) / CLOCKS_PER_SEC; //calculating total time
 
     // TODO: Calculate the time differences for the unoptimized run in seconds.
     //       - Use variables of type 'double' to store the times.
@@ -134,8 +134,8 @@ int main() {
     
     clock_t end_total_optimized = clock();
 
-    double total_processing_optimized = (double)(end_processing_optimized - start_processing_optimized) / CLOCKS_PER_SEC;
-    double total_optimized = (double)(end_total_optimized - start_total_optimized) / CLOCKS_PER_SEC;
+    double total_processing_optimized = (double)(end_processing_optimized - start_processing_optimized) / CLOCKS_PER_SEC; //calculating processing time
+    double total_optimized = (double)(end_total_optimized - start_total_optimized) / CLOCKS_PER_SEC; //calculating total time
 
     printf("\n--- Timing Results ---\n");
     printf("Unoptimized Total Time: %.6f seconds\n", total_unoptimized);
