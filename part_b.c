@@ -19,6 +19,7 @@ bool validate_input(const char* binary_str) {
     // Replace this with your actual validation logic.
     if(strlen(binary_str) != 8)
     {
+	printf("Input invalid!\n");
 	return false;
     }
     else
