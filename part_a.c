@@ -139,7 +139,9 @@ int main() {
 
     printf("\n--- Timing Results ---\n");
     printf("Unoptimized Total Time: %.6f seconds\n", total_unoptimized);
+    printf("Unoptimized Processing Time: %.6f seconds\n", total_processing_unoptimized);
     printf("Optimized Total Time: %.6f seconds\n", total_optimized);
+    printf("Optimized Processing Time: %.6f seconds\n", total_processing_optimized);
 
     // TODO: Calculate the time differences for the optimized run in seconds.
     //       - Calculate the total execution time.
@@ -149,7 +151,6 @@ int main() {
 
     // --- Calculations for the Report ---
     printf("\n--- Amdahl's Law Analysis Data ---\n");
-    printf("Use the timing data you collected and printed above to complete your report.\n");
 
     // TODO: Students, use your calculated timing data to find the following factors.
     //       You will need to define variables for your timings (e.g., t_total_unoptimized)
